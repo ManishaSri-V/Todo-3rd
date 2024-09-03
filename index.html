@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Task Manager</title>
+    <link rel="stylesheet" , href="style.css" />
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <form class="form">
+      <label>
+        Title: &nbsp;
+        <input type="text" required />
+      </label>
+      <label>
+        Date: &nbsp;
+        <input type="date" value="date" />
+      </label>
+      <label>
+        Description: &nbsp;
+        <input type="text" required />
+      </label>
+    </form>
+    <button onclick="addTask()">Add Task</button>
+    <button onclick="getTasks()">Get Tasks</button>
+  </body>
+</html>
